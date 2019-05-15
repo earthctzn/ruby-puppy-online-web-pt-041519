@@ -1,7 +1,14 @@
 class Dog 
   
-  @all =[]
+  @@all =[]
   
-  def initialize()
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
+  
+  def self.all
+    puts self
+  end
     
 end
