@@ -10,7 +10,7 @@ class Dog
   end
   
   def self.all
-    puts self
+    puts @all
   end
     
 end
