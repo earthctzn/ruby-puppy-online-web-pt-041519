@@ -1,3 +1,4 @@
+require 'pry'
 class Dog 
   
   attr_reader :name 
@@ -10,7 +11,7 @@ class Dog
   end
   
   def self.all
-    puts @@all
+    binding.pry
   end
     
 end
