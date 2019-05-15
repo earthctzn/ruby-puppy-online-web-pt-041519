@@ -9,9 +9,12 @@ class Dog
     @name = name
     @@all << self
   end
-  binding.pry
+
   def self.all
+    @@all.map |name|
+    puts name
   end
+  
   def self.clear_all
     @@all.clear
   end
